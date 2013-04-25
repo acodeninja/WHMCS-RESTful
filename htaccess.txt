@@ -1,0 +1,14 @@
+##
+# HTAccess file to allow for properly reestful urls
+##
+
+# Turn the Rewrite
+RewriteEngine On
+
+# The rewrite rules
+# To be condensed
+RewriteRule ^rest/([^/]*)$ ./index.php?m=restful&url=$1 [L,NC]
+RewriteRule ^rest/([^/]*)/([^/]*)$ ./index.php?m=restful&url=$1/$2 [L,NC]
+RewriteRule ^rest/([^/]*)/([^/]*)/([^/]*)$ ./index.php?m=restful&url=$1/$2/$3 [L,NC]
+RewriteRule ^rest/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ ./index.php?m=restful&url=$1/$2/$3/$4 [L,NC]
+RewriteRule ^rest/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ ./index.php?m=restful&url=$1/$2/$3/$4/$5 [L,NC]
