@@ -74,15 +74,16 @@ function restful_clientarea($vars) {
     $modulelink = $vars['modulelink'];
     $version = $vars['version'];
     $LANG = $vars['_lang'];
-        
+
     return array(
         'pagetitle' => 'RESTful API',
         'forcessl' => true,
         'templatefile' => 'templates/default',
         'requirelogin' => false,
         'vars' => array(
+            'url' => $_GET['url'],
             'lang' => $LANG,
         ),
     );
-        
+
 }
