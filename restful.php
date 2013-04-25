@@ -49,15 +49,7 @@ function restful_output($vars) {
 
     $LANG = $vars['_lang'];
     
-     return array(
-        'pagetitle' => 'RESTful API',
-        'forcessl' => true,
-        'templatefile' => 'templates/default',
-        'requirelogin' => false,
-        'vars' => array(
-            'lang' => $LANG,
-        ),
-    );
+    echo "Admin area";
 
 }
 
@@ -69,7 +61,7 @@ function restful_sidebar($vars) {
     
     $sidebar = '<span class="header">RESTful API</span>
     			<ul class="menu">
-	                <li><a href="https://github.com/lgoldstien/WHMCS-RESTful">Github Page</a></li>
+	                <li><a href="https://github.com/lgoldstien/WHMCS-RESTful" target="_blank">Github Page</a></li>
     			</ul>
     ';
     
